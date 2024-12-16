@@ -14,7 +14,7 @@
     
 </head>
 <body>
-        <button id="buy-btn">Зарегать цель</button>
+        <button id="buy-btn">Зарегать цель без матчинга</button>
 
     <!-- Разместите скрипт здесь -->
 
@@ -40,16 +40,7 @@
   document.getElementById("buy-btn").addEventListener("click", function() {
       ak_pixel_push(
         "purchase",      
-        100,             
-        {
-            db_id: 1,
-            email: "john1doe@example.com"
-        },
-        {
-          _fname: "John",
-          _lname: "Doe",
-          email: "john1doe@example.com", 
-        }
+        100
       );
   });
 </script>
